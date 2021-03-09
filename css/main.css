@@ -1,0 +1,856 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../images/zdenek-machacek-Vu4-Il_2Kdo-unsplash.jpg);
+  background-size: cover;
+}
+.blue-signup-login-container {
+  background-color: rgb(6, 15, 56, 0.85);
+  width: 820px;
+  height: 350px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 1;
+}
+.blue-signup {
+  width: 50%;
+  text-align: left;
+  padding: 50px 50px 0px 50px;
+  color: white;
+}
+.blue-signup h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.blue-signup .hr {
+  width: 35px;
+  height: 1px;
+  background: rgb(78, 147, 226);
+  border: 0px;
+}
+.blue-signup p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.blue-signup button {
+  font-size: 11px;
+  font-weight: 600;
+  color: inherit;
+  background: transparent;
+  width: 120px;
+  height: 45px;
+  border: 2px solid rgb(78, 147, 226);
+  border-radius: 20px;
+}
+.blue-signup button:hover {
+  background-color: rgb(78, 147, 226);
+}
+.blue-login {
+  width: 50%;
+  text-align: left;
+  padding: 50px 50px 0px 50px;
+  color: white;
+}
+.blue-login h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.blue-login .hr {
+  width: 35px;
+  height: 1px;
+  background: rgb(78, 147, 226);
+  border: 0px;
+}
+.blue-login p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.blue-login button {
+  font-size: 11px;
+  font-weight: 600;
+  color: inherit;
+  background: transparent;
+  width: 120px;
+  height: 45px;
+  border: 2px solid rgb(78, 147, 226);
+  border-radius: 20px;
+}
+.blue-login button:hover {
+  background-color: rgb(78, 147, 226);
+}
+.white-signup-login-container {
+  background-color: rgba(255, 255, 255, 1);
+  width: 400px;
+  height: 380px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 610px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 2;
+}
+.white-login-content {
+  width: 100%;
+  padding: 65px 50px 50px 50px;
+}
+.white-login-content header {
+  padding-bottom: 15px;
+}
+.white-login-content header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.white-login-content .hr {
+  width: 35px;
+  height: 1px;
+  background: rgb(78, 147, 226);
+  border: 0px;
+}
+.white-login-content .form-group {
+  margin-bottom: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  color: rgba(121, 121, 121, 0.9);
+}
+.white-login-content label {
+  display: block;
+}
+.white-login-content span {
+  color: red;
+}
+.white-login-content i {
+  float: right;
+}
+.white-login-content .form-control {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  display: block;
+  width: 100%;
+  height: 26px;
+  font-size: 14px;
+}
+.white-login-content button {
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  width: 120px;
+  height: 45px;
+  border: 2px solid rgb(248, 154, 53);
+  background-color: rgb(248, 154, 53);
+  border-radius: 20px;
+}
+.white-login-content button:hover {
+  background-color: rgb(255, 213, 27);
+  border: 2px solid rgb(255, 213, 27);
+}
+.form-group a {
+  color: inherit;
+  text-decoration: none;
+  float: right;
+  padding-top: 10px;
+}
+
+.white-signup-content {
+  display: none;
+  width: 100%;
+  padding: 40px 50px 50px 50px;
+}
+
+.white-signup-content header {
+  padding-bottom: 15px;
+}
+
+.white-signup-content header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.white-signup-content .hr {
+  width: 35px;
+  height: 1px;
+  background: rgb(78, 147, 226);
+  border: 0px;
+}
+
+.white-signup-content .form-group {
+  margin-bottom: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  color: rgba(121, 121, 121, 0.9);
+}
+
+.white-signup-content label {
+  display: block;
+}
+
+.white-signup-content span {
+  color: red;
+}
+
+.white-signup-content i {
+  float: right;
+}
+
+.white-signup-content .form-control {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  display: block;
+  width: 100%;
+  height: 26px;
+  font-size: 14px;
+}
+
+.white-signup-content button {
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  width: 120px;
+  height: 45px;
+  border: 2px solid rgb(248, 154, 53);
+  background-color: rgb(248, 154, 53);
+  border-radius: 20px;
+}
+
+.white-signup-content button:hover {
+  background-color: rgb(255, 213, 27);
+  border: 2px solid rgb(255, 213, 27);
+}
+.form-group a {
+  color: inherit;
+  text-decoration: none;
+  float: right;
+  padding-top: 10px;
+}
+.fa-eye {
+  margin-top: -20px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.loggedin-container {
+  background-color: rgb(255, 255, 255, 0.85);
+  width: 800px;
+  height: 500px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 1;
+}
+.loggedin-button {
+  display: block;
+  margin: 80px auto auto auto;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  width: 120px;
+  height: 45px;
+  border: 2px solid rgb(248, 154, 53);
+  background-color: rgb(248, 154, 53);
+  border-radius: 20px;
+}
+.signup-complete {
+  background-color: rgba(248, 154, 53, 0.6);
+  width: 300px;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-complete h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.loggedin-logout-button {
+  background-color: rgba(248, 154, 53, 0.6);
+  width: 150px;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.profile-information {
+  display: block;
+  width: 100%;
+  padding: 50px;
+  margin: 0 auto;
+}
+.profile-information div {
+  color: rgb(78, 147, 226);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 400px) {
+  .blue-signup-login-container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blue-signup {
+    padding: 20px 20px 0px 20px;
+  }
+  .blue-signup h2 {
+    font-size: 16px;
+  }
+  .blue-signup p {
+    font-size: 12px;
+  }
+  .blue-signup button {
+    width: 80px;
+    height: 30px;
+  }
+  .blue-login {
+    padding: 20px 20px 0px 20px;
+  }
+  .blue-login h2 {
+    font-size: 16px;
+  }
+  .blue-login p {
+    font-size: 12px;
+  }
+  .blue-login button {
+    width: 80px;
+    height: 30px;
+  }
+  .white-signup-login-container {
+    left: 74%;
+    width: 140px;
+  }
+  .white-login-content {
+    padding: 40px 10px 10px 10px;
+  }
+  .white-login-content header {
+    padding-bottom: 40px;
+  }
+  .white-login-content header h2{
+    font-size: 16px;
+  }
+  .white-login-content .form-group {
+    font-size: 12px;
+  }
+  .white-login-content button {
+    width: 70px;
+    height: 40px;
+    margin-top: 30px;
+    
+  }
+  .white-login-content a {
+    margin-top: 30px;
+  }
+  .white-signup-content {
+    padding: 40px 10px 10px 10px;
+  }
+  .white-signup-content header {
+    padding-bottom: 20px;
+  }
+  .white-signup-content header h2 {
+    font-size: 16px;
+  }
+  .white-signup-content .form-group {
+    font-size: 12px;
+  }
+  .white-signup-content button {
+    width: 80px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .blue-signup-login-container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blue-signup {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-signup h2 {
+    font-size: 20px;
+  }
+
+  .blue-signup p {
+    font-size: 14px;
+  }
+
+  .blue-signup button {
+    width: 80px;
+    height: 30px;
+  }
+
+  .blue-login {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-login h2 {
+    font-size: 20px;
+  }
+
+  .blue-login p {
+    font-size: 14px;
+  }
+
+  .blue-login button {
+    width: 80px;
+    height: 30px;
+  }
+
+  .white-signup-login-container {
+    width: 190px;
+    left: 74%;
+  }
+
+  .white-login-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-login-content header {
+    padding-bottom: 40px;
+  }
+
+  .white-login-content header h2 {
+    font-size: 20px;
+  }
+
+  .white-login-content .form-group {
+    font-size: 14px;
+  }
+
+  .white-login-content button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-signup-content header {
+    padding-bottom: 20px;
+  }
+
+  .white-signup-content header h2 {
+    font-size: 20px;
+  }
+
+  .white-signup-content .form-group {
+    font-size: 14px;
+  }
+
+  .white-signup-content button {
+    width: 100px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .blue-signup-login-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blue-signup {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-signup h2 {
+    font-size: 24px;
+  }
+
+  .blue-signup p {
+    font-size: 16px;
+  }
+
+  .blue-signup button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .blue-login {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-login h2 {
+    font-size: 24px;
+  }
+
+  .blue-login p {
+    font-size: 16px;
+  }
+
+  .blue-login button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-login-container {
+    width: 240px;
+    left: 74%;
+  }
+
+  .white-login-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-login-content header {
+    padding-bottom: 40px;
+  }
+
+  .white-login-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-login-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-login-content button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-signup-content header {
+    padding-bottom: 20px;
+  }
+
+  .white-signup-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-signup-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-signup-content button {
+    width: 100px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  .blue-signup-login-container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blue-signup {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-signup h2 {
+    font-size: 24px;
+  }
+
+  .blue-signup p {
+    font-size: 16px;
+  }
+
+  .blue-signup button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .blue-login {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-login h2 {
+    font-size: 24px;
+  }
+
+  .blue-login p {
+    font-size: 16px;
+  }
+
+  .blue-login button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-login-container {
+    width: 290px;
+    left: 74%;
+  }
+
+  .white-login-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-login-content header {
+    padding-bottom: 40px;
+  }
+
+  .white-login-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-login-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-login-content button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-signup-content header {
+    padding-bottom: 20px;
+  }
+
+  .white-signup-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-signup-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-signup-content button {
+    width: 100px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .blue-signup-login-container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blue-signup {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-signup h2 {
+    font-size: 24px;
+  }
+
+  .blue-signup p {
+    font-size: 16px;
+  }
+
+  .blue-signup button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .blue-login {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-login h2 {
+    font-size: 24px;
+  }
+
+  .blue-login p {
+    font-size: 16px;
+  }
+
+  .blue-login button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-login-container {
+    width: 340px;
+    left: 74%;
+  }
+
+  .white-login-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-login-content header {
+    padding-bottom: 40px;
+  }
+
+  .white-login-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-login-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-login-content button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-signup-content header {
+    padding-bottom: 20px;
+  }
+
+  .white-signup-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-signup-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-signup-content button {
+    width: 100px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  .blue-signup-login-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blue-signup {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-signup h2 {
+    font-size: 24px;
+  }
+
+  .blue-signup p {
+    font-size: 16px;
+  }
+
+  .blue-signup button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .blue-login {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .blue-login h2 {
+    font-size: 24px;
+  }
+
+  .blue-login p {
+    font-size: 16px;
+  }
+
+  .blue-login button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-login-container {
+    width: 380px;
+    left: 74%;
+  }
+
+  .white-login-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-login-content header {
+    padding-bottom: 40px;
+  }
+
+  .white-login-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-login-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-login-content button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .white-signup-content {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .white-signup-content header {
+    padding-bottom: 20px;
+  }
+
+  .white-signup-content header h2 {
+    font-size: 24px;
+  }
+
+  .white-signup-content .form-group {
+    font-size: 16px;
+  }
+
+  .white-signup-content button {
+    width: 100px;
+    height: 40px;
+  }
+}
